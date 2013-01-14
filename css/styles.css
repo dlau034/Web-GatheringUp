@@ -1,4 +1,6 @@
-	/* Font Style Overrides */
+html {
+	height: 100%;
+}
 
 body {
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
@@ -259,14 +261,14 @@ input.SearchForm {
 	height: 695px;
 	overflow: auto;
 	position: relative;
-
 }
+
 
 .footer {
 	text-align: center;
-	padding: 10px 0;
-	margin-top: 30px;
-	border-bottom: 5px solid #E71B75;
+	position: relative;
+	padding: 10px 5px;
+	border-bottom:10px solid #E71B75;
 	background-color: #1b1b1b;
 	background-image: -moz-linear-gradient(top, #222222, #111111);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
@@ -275,6 +277,15 @@ input.SearchForm {
 	background-image: linear-gradient(to bottom, #222222, #111111);
 	background-repeat: repeat-x;
 	color: white;
-
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
 }
+
+#spaceholder {
+	height: 96px;
+}
+
+#myModalLabel {
+	text-align: center;
+}
+
+
