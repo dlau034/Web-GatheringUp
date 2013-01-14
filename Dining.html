@@ -1,0 +1,338 @@
+<!Doctype html>
+<html>
+    <head>
+    		<meta charset="utf-8">
+    	    <title>Dining</title>
+    	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	    <meta name="description" content="">
+    	    <meta name="author" content="">
+
+        <!-- Le styles -->
+    	    <link href="css/bootstrap.css" rel="stylesheet">
+    	    <style type="text/css">
+    	      body {
+    	        padding-top: 60px;
+    	        padding-bottom: 0px;
+    	      }
+        	</style>
+    	    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+          <link rel="Stylesheet" type="text/css" href="css/search.css"/>
+          <link href="css/styles.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+           <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+          <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                       <link rel="shortcut icon" href="ico/favicon.png">
+
+        <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+
+
+
+      </head>
+<body>
+
+     <!-- Header + Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="top-stripe"></div>
+
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">GatheringUP</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="Dining.html">Dining</a></li>
+              <li><a href="Places.html">Places</a></li>
+              <li><a href="Events.html">Events</a></li>
+              <li><a href="#Datebook">Datebook</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <button type="button" class="btn btn btn-inverse">Register</button>
+              <button type="button" class="btn btn btn-inverse">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <div class="sideBar span3">
+        <h2>Food Search</h2>
+        <div class="foodSearch">
+          <form>
+            <fieldset>
+              <input class="SearchForm" type="text" placeholder="Restaurant Name">
+              <input class="SearchForm" type="text" placeholder="Category">
+              <input class="SearchForm" type="text" placeholder="Neighbourhood">
+              <button class="btn btn-large btn-blue btn-search" type="submit" class="btn">Search</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="feelLuck">
+          <form>
+            <fieldset>
+              <input class="SearchForm" type="text" placeholder="Neighbourhood">
+              <button class="btn btn-large btn-blue btn-search" type="submit" class="btn">Feeling Lucky?</button>
+            </fieldset>
+          </form>
+        </div>
+  </div>
+
+  <div class="sideBar span4">
+        <h2>What's Around Here?</h2>
+
+    <!--Result Module -->
+  <div data-spy="scroll" data-target="#navbarExample" data-offset="10" class="scrollspy-example">
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+    <!--Result Module -->
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+    <!--Result Module -->
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+    <!--Result Module -->
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+    <!--Result Module -->
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+    <!--Result Module -->
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+    <!--Result Module -->
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+    <!--Result Module -->
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+    <!--Result Module -->
+
+    <div class="solidbox">
+    <div style="float: right;" id="2241938"></div>
+    <b>
+    <a href="javascript:void(0);" onclick="restaurantdetails(2241938)">
+    CAFE BASIL GOURMET</a>
+    </b>
+    <br>
+    762-764 3 AVENUE<br>
+    MANHATTAN, NY<br>
+    American (New)<br>
+
+    <div class="actions">
+    <a href="javascript:void(0);" onclick="loginpopup('#')">
+    <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark</a>
+    <a href="/food/create?idplace=2257308">
+    <img src="img/gtk-save.png" width="30" align="bottom">Create Event</a>
+    </div>
+    </div>
+
+</div>
+
+<!--Result Module -->
+
+
+</div>
+    <div class="sideBar span5">
+       <div class= "Mapbox">
+            <img src="http://maps.googleapis.com/maps/api/staticmap?center=40.7410000,-73.9800000&zoom=10&size=440x640&maptype=roadmap&markers=40.53222220000000,-74.20250000000000&markers=40.80944440000000,-73.96277780000000&markers=40.73000000000000,-73.87222220000000&markers=40.78750000000000,-73.95444440000000&markers=40.76527780000000,-73.95888890000000&markers=40.86111110000000,-73.89055560000000&markers=40.67861110000000,-73.91333330000000&markers=40.80861110000000,-73.96416670000000&markers=40.57649340000000,-74.20375550000000&markers=40.80065680000000,-73.81985630000000&sensor=false" class="img-polaroid Mapbox" style="width: 100%; height: auto;">
+      </div>
+    </div>
+  </div>
+
+      <!-- Le javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap-transition.js"></script>
+      <script src="js/bootstrap-alert.js"></script>
+      <script src="js/bootstrap-modal.js"></script>
+      <script src="js/bootstrap-dropdown.js"></script>
+      <script src="js/bootstrap-scrollspy.js"></script>
+      <script src="js/bootstrap-tab.js"></script>
+      <script src="js/bootstrap-tooltip.js"></script>
+      <script src="js/bootstrap-popover.js"></script>
+      <script src="js/bootstrap-button.js"></script>
+      <script src="js/bootstrap-collapse.js"></script>
+      <script src="js/bootstrap-carousel.js"></script>
+      <script src="js/bootstrap-typeahead.js"></script>
+
+
+
+      <script type="text/javascript"> 
+      $('#navbar').scrollspy(); 
+      });
+      </script>
+
+
+  </body>
+</html>
