@@ -9,12 +9,6 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 0px;
-      }
-    </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
@@ -26,15 +20,15 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="ico/favicon.png">
-
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
+    <div class="wrapper">    
 
      <!-- Header + Navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -90,16 +84,47 @@
       </div>
     </div>
 
-    <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <p><a class="btn btn-large btn-blue pull-right">Get Started Now!  &raquo;</a></p>
-     </div>
-        <div class="comment_box">
-          <h4 class="hero_comment pull-right">This is a test Donec id elit non mi porta gravida at eget non mi porta gravida at eget metus</h4>
+          <!-- Slider -->      
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/new_york_city.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-blue" href="#">Register Today</a>
+            </div>
+          </div>
         </div>
+        <div class="item">
+          <img src="img/brooklyn_bridge.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-blue" href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/centralpark.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-blue" href="#">Browse Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+ 
       <!-- Example row of columns -->
+    <div class="container">         
       <div class="row">
         <div class="span3 catogories">
           <img src="img/dining_icon.png" class="img-circle">
@@ -136,10 +161,22 @@
     <div class="span2"></div>
 </div>
 </div>
+</div>
 
-<footer class="footer">
-    <p>Terms of use  |  Privacy policy  |  Contact us</p>
-</footer>
+<div class="footer">
+  <p>
+      Copyright Gathering Up Ltd. All rights reserved. Proudly made in New York City!
+  </p>  
+  <p>
+    <a href="http://twitter.com">Follow Us on Twitter</a> | 
+    <a href="http://Facebook.com">Follow Us on Facebook</a><br>
+  </p> 
+  <p>  
+    <a href="terms.html">Terms of Use</a>  |  
+    <a href="Privacy.html">Privacy Policy</a> | 
+    <a href="Contact.html">Contact Us</a>
+  </p>  
+</div>  
 
 <!--Register Modal-->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -222,6 +259,7 @@
 
                       
 
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -238,6 +276,11 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript"> 
+      $('.carousel').carousel({
+        interval: 5000
+      })
+    </script>
 
   </body>
 </html>

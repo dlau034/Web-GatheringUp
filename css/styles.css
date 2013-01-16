@@ -1,5 +1,5 @@
 html {
-	height: 100%;
+
 }
 
 body {
@@ -19,6 +19,10 @@ h4 {
 
 a:hover {
 	text-decoration: none;
+}
+
+.container {
+	height: auto;
 }
 
 .hero-unit {
@@ -126,8 +130,8 @@ a:hover {
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th  {
-	  background-color: #00ACDB;
-	  color: white;
+	  background-color: #f9f9f9;
+	  color: #222;
  }
 
 
@@ -282,22 +286,6 @@ input.SearchForm {
 }
 
 
-.footer {
-	text-align: center;
-	position: relative;
-	padding: 10px 5px;
-	border-bottom:10px solid #E71B75;
-	background-color: #1b1b1b;
-	background-image: -moz-linear-gradient(top, #222222, #111111);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
-	background-image: -webkit-linear-gradient(top, #222222, #111111);
-	background-image: -o-linear-gradient(top, #222222, #111111);
-	background-image: linear-gradient(to bottom, #222222, #111111);
-	background-repeat: repeat-x;
-	color: white;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
-}
-
 #spaceholder {
 	height: 96px;
 }
@@ -321,6 +309,17 @@ input.SearchForm {
 .modal-body {
 	max-height: 430px;
 }
+
+.modal-header {
+	border-bottom: 0px;
+}
+
+.modal-footer {
+	border: 0px;
+	background-color: none;
+
+}
+
 
 input.squareCorners {
 	border-radius: 0px
@@ -387,18 +386,170 @@ input.squareCorners {
 }
 
 .datebook {
-	height: 1000px;
 }
 
 div.grandcentral {
 	width: 562px;
 	box-shadow: none;
-	background-color: #f9f9f9;
-	margin-top: 0px;	
-	padding: 10px;
+	background-color: white;
+	margin-top: -30px;	
+	padding: 7px;
 }
 
 .yourBookmarks {
+	overflow: auto;
+	min-height: 525px;
+	height: 80%;
+	position: absolute;
+	width: 270px;
+}
+
+.eventbox > a {
+	font-weight: bold;
+}
+
+.eventbox > a:hover {
+	color: #E71B75;
+}
+
+.EventListing {
+	max-height: 350px;
+	overflow: auto;
+	margin-bottom:20px;
+}
+
+.icon-chevron-right {
+	background-position: -456px -72px;
+	float: right;
+	vertical-align: text-bottom;
+	margin-top: 12px;
+}
+
+.fc-event-hori {
+	border-width: 0px 0;
+}
+
+.eventForm {
+	padding-left: 28px;
+}
+
+#CreateEvent {
+	border-radius: 0px;
 	background-color: #f9f9f9;
-	height: 662px;
+	padding-bottom: 10px;
+}
+
+.span5.squareCorners {
+	border-radius: 0px;
+}
+
+.form-signin {
+  max-width: 500px;
+  padding: 0px 29px 29px;
+  margin: 0 auto 20px;
+}
+
+.contactForm {
+	width: 100%;
+}
+
+input.form-large {
+	padding:10px;	
+	font-size: 1.2em;
+	border-radius: 0px;
+}
+
+textarea.form-large {
+	padding:10px;	
+	font-size: 1.2em;
+	border-radius: 0px;
+}
+
+.footer {
+	text-align: center;
+	position: relative;
+	padding: 10px 5px;
+	border-bottom:5px solid #E71B75;
+	background-color: #1b1b1b;
+	background-image: -moz-linear-gradient(top, #222222, #111111);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+	background-image: -webkit-linear-gradient(top, #222222, #111111);
+	background-image: -o-linear-gradient(top, #222222, #111111);
+	background-image: linear-gradient(to bottom, #222222, #111111);
+	background-repeat: repeat-x;
+	color: white;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+}
+
+a{
+	color: #999;
+}
+
+.footer, .push {
+	height: 90px; /* .push must be the same height as .footer */
+}
+
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -90
+	px; /* the bottom margin is the negative value of the footer's height */
+}
+
+  /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+
+.carousel .container {
+  position: relative;
+  z-index: 9;
+}
+.carousel-control {
+  height: 80px;
+  margin-top: 20px;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+}
+
+.carousel .item {
+  height: 500px;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 550px;
+  padding: 0 20px;
+  margin-top: 200px;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+color: #ffffff;
+background-color: #00ACDB;
 }
