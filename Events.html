@@ -30,49 +30,71 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
       <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
       <link rel="shortcut icon" href="ico/favicon.png">
-  <!-- Google Fonts -->
+<!-- Google Fonts -->
       <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <!-- Header + Navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="top-stripe"></div>
+    <div class="wrapper"> <!-- Wrapper -->     
 
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="index.html">GatheringUP</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="Dining.html">Dining</a></li>
-              <li><a href="Places.html">Places</a></li>
-              <li class="active"><a href="Events.html">Events</a></li>
-              <li><a href="datebook.html">Datebook</a></li>
-            </ul>
-            <form class="navbar-form pull-right">
-              <button type="button" class="btn btn btn-inverse">Register</button>
-              <button type="button" class="btn btn btn-inverse">Sign in</button>
-            </form>
-          </div><!--/.nav-collapse -->
+<!-- Header + Navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="top-stripe"></div>
+        <div class="navbar-inner">
+          <div class="container"> <!-- Container -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.html">GatheringUP</a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li><a href="Dining.html">Dining</a></li>
+                  <li><a href="Places.html">Places</a></li>
+                  <li class="active"><a href="Events.html">Events</a></li>
+                  <li><a href="datebook.html">Datebook</a></li>
+               </ul>
+              <form class="navbar-form pull-right">
+                <a href="#myModal" type="button" class="btn-menu" data-toggle="modal">Register</a>
+                <a class="dropdown-toggle btn-menu" type="button" data-toggle="dropdown" href="#">Sign In</a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <form class="form-horizontal">
+                      <div class="SignInField">
+                        <button type="submit" class="btn btn-facebook" style="font-weight:bold;width:100%;">
+                          <img style="height:30px;width:auto;padding-right:5px;"src="img/facebook.png" alt="facebook">Sign In with Facebook
+                        </button>
+                      </div>
+                      <li class="divider"></li>
+                      <div class="SignInField">
+                        <input type="text" class="squareCorners" placeholder="Email">
+                      </div>
+                      <div class="SignInField">
+                        <input type="password" class="squareCorners" placeholder="Password">
+                      </div>
+                      <div class="SignInField">
+                        <a data-target="#myModal2" data-toggle="modal">Forgot Your Password?</a>
+                        <label class="checkbox">
+                          <input type="checkbox">Remember me
+                        </label>
+                        <button type="submit" class="btn btn-blue pull-right" style="font-weight:bold;">Sign In!</button>
+                      </div>
+                  </form>             
+                </ul>
+              </form>
+              </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
-    </div>
 
-<!-- Sidebar -->
+<!-- Sidemenu -->
 
-<div class="container">
+      <div class="container"> <!-- Container -->
   <div class="row">
-    
     <div class="sideBar span3">
         <h2>Calendar</h2>
         <div id="datepicker"></div>
-
           <h2>Search Filter</h2>
               <div class="EventSearchFilter">
                   <table class="table table-hover table-bordered">
@@ -92,8 +114,9 @@
                      </tbody>    
                   </table>
               </div>
-
-  <p><a class="btn btn-large btn-blue">Submit Your Events</a></p>
+          <p>
+            <a class="btn btn-large btn-blue">Submit Your Events</a>
+          </p>
     </div>
 
  <!--Event Body content-->
@@ -103,226 +126,226 @@
         <div class="span3"><h2 class="searchFilter pull-right">Evening</h2> </div>
       </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
-<div class="eventmain">
+        <div class="eventmain">
 
-<div class="boxdate">January      <div class="boxday">9</div></div>
-<div class="eventtitle" name="4983">
-<b>Community Supported Agriculture and Community Gardens II</b><br>
-  Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
-<br>Just Food Office<div class="padding"></div>
-</div>
-<div class="eventbody" style="display: none;">
-<p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
-<!-- 
-<a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
--  -->
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
+        <div class="boxdate">January      <div class="boxday">9</div></div>
+        <div class="eventtitle" name="4983">
+        <b>Community Supported Agriculture and Community Gardens II</b><br>
+          Wednesday January 9, 2013 05:30 PM - 07:00 PM<img align="right" src="/images/1leftarrow.png" id="expand" title="Expand">
+        <br>Just Food Office<div class="padding"></div>
+        </div>
+        <div class="eventbody" style="display: none;">
+        <p> Learn more about the ins and outs of setting up and running a CSA in your community. Learn how you can get connected with a farmer,  how to set up flexible payment options for community members and how Just Food can help you get started. We’ll hear from experienced CSA organizers about their partnership with their farms and the work they do to manage their CSAs. You will need to register for all three sessions in this series. </p>
+        <!-- 
+        <a href="/event/recommend?event=4983"><img src="/images/bookmark.png" width="16" align="bottom"> Recommend</a> 
+        -  -->
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-save.png" width="30" align="bottom">Save Event</a>
 
-<a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
-<img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
+        <a href="javascript:void(0);" onclick="loginpopup('/saveactivity?events=4983')">
+        <img src="img/gtk-bookmark.png" width="30" align="bottom">Bookmark Event</a>
 
-</div>
-</div>
+        </div>
+        </div>
 
 
 
@@ -330,23 +353,97 @@
 
 
  <!--Pagination-->
+        <div class="eventmain pageNumber">
+          <table>
+            <tbody>
+              <tr>
+              <td width="70">Previous</td><td width="20"><b>1</b></td><td width="20"><a href="/?page=2">2</a></td> <td width="20"><a href="/?page=3">3</a></td> <td width="20"><a href="/?page=4">4</a></td> <td width="20"><a href="/?page=5">5</a></td> <td width="20"><a href="/?page=6">6</a></td> <td width="20"><a href="/?page=7">7</a></td> <td width="20"><a href="/?page=8">8</a></td> <td width="70"><a href="/?page=2">Next</a></td> 
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- Wrapper -->    
 
-<div class="eventmain pageNumber">
-<table>
-<tbody>
-<tr>
-<td width="70">Previous</td><td width="20"><b>1</b></td><td width="20"><a href="/?page=2">2</a></td> <td width="20"><a href="/?page=3">3</a></td> <td width="20"><a href="/?page=4">4</a></td> <td width="20"><a href="/?page=5">5</a></td> <td width="20"><a href="/?page=6">6</a></td> <td width="20"><a href="/?page=7">7</a></td> <td width="20"><a href="/?page=8">8</a></td> <td width="70"><a href="/?page=2">Next</a></td> </tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
+<!--Register Modal-->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header registerModal">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h2 id="myModalLabel">Register with GatheringUP!</h2>
+        <button type="submit" class="btn btn-large btn-facebook" style="font-weight:bold;margin-left:100px;margin-bottom:20px;">
+        <img style="padding-right: 15px;"src="img/facebook.png" alt="facebook">REGISTER WITH FACEBOOK</button>
+        <div class="breakline"></div>
+      </div>
+        <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label" for="inputFirstName">First Name</label>
+                <div class="controls">
+                  <input type="text" class="squareCorners" placeholder="First Name">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">Last Name</label>
+                <div class="controls">
+                  <input type="text" class="squareCorners" placeholder="Last Name">
+                </div>
+              </div>        
+                  <div class="control-group">
+                <label class="control-label" for="inputEmail">Email</label>
+                <div class="controls">
+                  <input type="text" class="squareCorners" placeholder="Email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputPassword">Create Password</label>
+                              <p class="helper">*At least one number & one capital letter</p> 
+                <div class="controls">
+                  <input type="password" class="squareCorners" placeholder="Min 8 Characters">
 
-<footer class="footer">
-    <p>Terms of use  |  Privacy policy  |  Contact us</p>
-</footer>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputConfirmPassword">Confirm Password</label>
+                <div class="controls">
+                  <input type="password" class="squareCorners" placeholder="Confirm Password">
 
+                </div>
+              </div>     
+              <div class="control-group">
+                <div class="controls">
+                  <div id="captcha"><img src="img/captcha"></div>
+                </div>
+              </div>   
+              <div class="control-group">
+                <label class="control-label" for="inputConfirmPassword">Enter Above</label>
+                <div class="controls">
+                  <input type="password" class="squareCorners" placeholder="Enter Above">
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <button type="submit" class="btn btn-blue btn-large">Register</button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>   
+
+<!-- Footer -->
+  <div class="footer">
+    <p>Copyright Gathering Up Ltd. All rights reserved. Proudly made in New York City!</p>  
+    <p>
+      <a href="http://twitter.com">Follow Us on Twitter</a> | 
+      <a href="http://Facebook.com">Follow Us on Facebook</a><br>
+    </p> 
+    <p>  
+      <a href="terms.html">Terms of Use</a>  |  
+      <a href="Privacy.html">Privacy Policy</a> | 
+      <a href="Contact.html">Contact Us</a>
+    </p>  
+  </div> 
 
     <!-- Le javascript
     ================================================== -->
@@ -365,7 +462,7 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
 
-      <!-- Datepicker  -->
+<!-- Datepicker  -->
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -376,50 +473,49 @@
       });
     </script>
 
-        <!-- Event Module Expand  -->
-
-  <script type="text/javascript">
-jQuery(document).ready(function() {
-//  jQuery(".eventbody").hide();
-  //toggle the componenet with class msg_body
-  jQuery(".eventtitle").click(function()
-  {
-    var up = "/images/1leftarrow.png";
-    var down = "/images/1downarrow.png";
-    var expand="Expand";
-    var retract="Reduce";
-
-    var icon = $('#expand', this);
-
-    var idevent = jQuery(this).attr('name');
-
+<!-- Event Module Expand  -->
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+    //  jQuery(".eventbody").hide();
+      //toggle the componenet with class msg_body
+      jQuery(".eventtitle").click(function()
+      {
+        var up = "/images/1leftarrow.png";
+        var down = "/images/1downarrow.png";
+        var expand="Expand";
+        var retract="Reduce";
     
-      jQuery(this).next(".eventbody").slideToggle('slow');
-
-      if(icon.attr('src')==up){
-      $.get("/atomic/logevent?events="+idevent);
-      icon.attr('src', down)
-      }else{
-        icon.attr('src', up);
-      }
-      icon.attr('title')==expand ? icon.attr('title', retract) : icon.attr('title', expand);
-      
-    });
-    jQuery(".hoverli").hover(
+        var icon = $('#expand', this);
+    
+        var idevent = jQuery(this).attr('name');
+    
         
-        function () {
-          var obj = $('.file_menu', this);
-          obj.stop(true, true).slideDown(200);
-          },
-          function () {
-          var obj = $('.file_menu', this);
-            obj.stop(true, true).slideUp(200);
+          jQuery(this).next(".eventbody").slideToggle('slow');
+    
+          if(icon.attr('src')==up){
+          $.get("/atomic/logevent?events="+idevent);
+          icon.attr('src', down)
+          }else{
+            icon.attr('src', up);
           }
-      );
-
-});
-
-</script>
+          icon.attr('title')==expand ? icon.attr('title', retract) : icon.attr('title', expand);
+          
+        });
+        jQuery(".hoverli").hover(
+            
+            function () {
+              var obj = $('.file_menu', this);
+              obj.stop(true, true).slideDown(200);
+              },
+              function () {
+              var obj = $('.file_menu', this);
+                obj.stop(true, true).slideUp(200);
+              }
+          );
+    
+    });
+    
+    </script>
 
 	<body>
 </html>

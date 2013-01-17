@@ -12,7 +12,6 @@
     <style type="text/css">
       body {
         padding-top: 60px;
-        padding-bottom: 0px;
       }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -31,66 +30,61 @@
     <link rel="shortcut icon" href="ico/favicon.png">
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
-  </head>
-
+</head>
   <body style="background-color:#f9f9f9;">
+    <div class="wrapper"> <!-- Wrapper -->
 
-    <div class="wrapper">
-
-     <!-- Header + Navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="top-stripe"></div>
-
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="index.html">GatheringUP</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="Dining.html">Dining</a></li>
-              <li><a href="Places.html">Places</a></li>
-              <li><a href="Events.html">Events</a></li>
-              <li><a href="datebook.html">Datebook</a></li>
-           </ul>
-            <form class="navbar-form pull-right">
-              <button a href="#myModal" type="button"  class="btn btn btn-inverse" data-toggle="modal">Register</button>
-              <button class="dropdown-toggle btn btn-inverse" type="button" data-toggle="dropdown" href="#">Sign In</button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <form class="form-horizontal">
-                    <div class="SignInField">
-                      <button type="submit" class="btn btn-facebook" style="font-weight:bold;width:100%;">
-                          Sign In with Facebook
-                      </button>
-                    </div>
-                    <li class="divider"></li>
-                    <div class="SignInField">
-                      <input type="text" class="form-large" placeholder="Email">
-                    </div>
-                    <div class="SignInField">
-                      <input type="password" class="squareCorners" placeholder="Password">
-                    </div>
-                    <div class="SignInField">
-                      <a data-target="#myModal2" data-toggle="modal">Forgot Your Password?</a>
-                        <img style="height:30px;width:auto;padding-right:5px;"src="img/facebook.png" alt="facebook">
-                     <label class="checkbox">
-                        <input type="checkbox">Remember me
-                      </label>
-                      <button type="submit" class="btn btn-blue pull-right" style="font-weight:bold;">Sign In!</button>
-                    </div>
-                </form>             
-              </ul>
-            </form>
-          </div><!--/.nav-collapse -->
+<!-- Header + Navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="top-stripe"></div>
+        <div class="navbar-inner">
+          <div class="container"> <!-- Container -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.html">GatheringUP</a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li><a href="Dining.html">Dining</a></li>
+                  <li><a href="Places.html">Places</a></li>
+                  <li><a href="Events.html">Events</a></li>
+                  <li><a href="datebook.html">Datebook</a></li>
+               </ul>
+              <form class="navbar-form pull-right">
+                <a href="#myModal" type="button" class="btn-menu" data-toggle="modal">Register</a>
+                <a class="dropdown-toggle btn-menu" type="button" data-toggle="dropdown" href="#">Sign In</a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <form class="form-horizontal">
+                      <div class="SignInField">
+                        <button type="submit" class="btn btn-facebook" style="font-weight:bold;width:100%;">
+                          <img style="height:30px;width:auto;padding-right:5px;"src="img/facebook.png" alt="facebook">Sign In with Facebook
+                        </button>
+                      </div>
+                      <li class="divider"></li>
+                      <div class="SignInField">
+                        <input type="text" class="squareCorners" placeholder="Email">
+                      </div>
+                      <div class="SignInField">
+                        <input type="password" class="squareCorners" placeholder="Password">
+                      </div>
+                      <div class="SignInField">
+                        <a data-target="#myModal2" data-toggle="modal">Forgot Your Password?</a>
+                        <label class="checkbox">
+                          <input type="checkbox">Remember me
+                        </label>
+                        <button type="submit" class="btn btn-blue pull-right" style="font-weight:bold;">Sign In!</button>
+                      </div>
+                  </form>             
+                </ul>
+              </form>
+              </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-
+  <div class="container"> <!--Container-->
       <form class="form-signin">
         <h2 class="form-signin-heading">Contact Us</h2>
         <div style="width:100%; margin:0 auto;" class="breakline"></div>
@@ -103,7 +97,6 @@
         <div style="width: 100%;margin: 15px 0px 24px 10px;" class="breakline"></div>        
         <button class="btn btn-large btn-blue" type="submit">Submit</button>
       </form>
-
     </div> <!-- /container -->  
   </div>
 

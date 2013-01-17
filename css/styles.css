@@ -5,6 +5,7 @@ html {
 body {
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
 	color: #4D4D4D;
+	background-image: url("../img/bg_grey.jpg");
 }
 
 h2 {
@@ -52,13 +53,21 @@ a:hover {
 	margin-right: -30px;
 }
 
+.btn.btn-blue.pull-right {
+	width: 100%;
+}
+
 .brand {
 	background-image: url("../img/gatheringUP.png");
 	width: 160px;s
 }
 
+.nav {
+	padding-left: 15px;
+}
+
 .navbar .brand {
-	margin-left: -6px;
+	margin-left: -1px;
 	padding-right: 30px;
 	text-indent: -999px;
 	background-repeat: no-repeat;
@@ -134,9 +143,7 @@ a:hover {
 	  color: #222;
  }
 
-
-
-  	/* Search.css Overrides */
+ 	/* Search.css Overrides */
 
 div.eventmain {
 	width: 855px;
@@ -160,10 +167,9 @@ div.boxdate {
 }
 div.eventtitle {
 	color: #4D4D4D;
-	font-size: 1.15em;
+	font-size: 1em;
 	line-height: 1.4em;
 	margin-top: 5px;
-
 }
 
 div.eventbody a {
@@ -177,6 +183,7 @@ div.eventbody a {
 
 .eventmain.pageNumber {
 	text-indent: 10px;
+	margin-bottom: 50px;
 }
 
 .foodSearch {
@@ -265,6 +272,23 @@ input.SearchForm {
 	background-repeat: no-repeat;
 	padding: 8px 26px 8px 12px;
 } 
+
+.btn-menu {
+  background-color: transparent; !important;
+  border: 2px solid #00ACDB;
+  color: #e9e9e9 !important;
+  border-radius: 5px;
+  padding: 6px 10px 6px 10px;
+}
+
+.btn-menu:hover {
+  background-color: #00ACDB; !important;
+  border: 2px solid #00ACDB;
+  color: #e9e9e9 !important;
+  border-radius: 5px;
+  padding: 6px 10px 6px 10px;
+}
+
 .solidbox {
 	background-color: #F9F9F9;
 	padding: 15px 20px 5px 20px;
@@ -274,6 +298,7 @@ input.SearchForm {
 	border-bottom-style: solid;
 	border-color: #00ACDB;
 	border-width: 8px;
+	margin-right: 10px;
 }
 .actions {
 	margin-top: 12px;
@@ -287,8 +312,10 @@ input.SearchForm {
 
 
 #spaceholder {
-	height: 96px;
+	height: 50px;
 }
+
+/* Modals */
 
 #myModalLabel {
 	text-align: center;
@@ -317,8 +344,23 @@ input.SearchForm {
 .modal-footer {
 	border: 0px;
 	background-color: none;
-
 }
+
+.modal {
+	border-radius: 0px;
+}
+
+#forgotModal {
+	width: 360px;
+	margin-left: -180px;
+	background-color: #f9f9f9;	
+}
+
+.modal-body {
+	max-height: 430px;
+}
+
+
 
 
 input.squareCorners {
@@ -391,7 +433,7 @@ input.squareCorners {
 div.grandcentral {
 	width: 562px;
 	box-shadow: none;
-	background-color: white;
+	background-color: transparent;
 	margin-top: -30px;	
 	padding: 7px;
 }
@@ -457,6 +499,8 @@ input.form-large {
 	padding:10px;	
 	font-size: 1.2em;
 	border-radius: 0px;
+	margin-top: 2px;
+	margin-bottom: 14px;
 }
 
 textarea.form-large {
@@ -500,12 +544,10 @@ html, body {
 	px; /* the bottom margin is the negative value of the footer's height */
 }
 
-  /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
     /* Carousel base class */
+
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 .carousel .container {
@@ -552,4 +594,88 @@ html, body {
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
 color: #ffffff;
 background-color: #00ACDB;
+}
+
+/* CUSTOMIZE THE NAVBAR */
+
+.navbar-form {
+	margin-top: 10px;
+}
+
+/* Featurettes */
+
+.featurette-divider {
+    margin: 60px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/* HomePage Title Info */
+
+.TitleText {
+	text-align: center;
+	font-weight: "arvo";
+	font-size: 1.5em;
+	padding-top: 37px;
+	color: #999;
+}
+
+.TitleInfo {
+	height: 175px;
+	margin-bottom: 80px;
+	background-image: url("../img/bg_green.jpg");
+	border-bottom: 2px white solid;
+	border-top: 6px #E71B75 solid;
+}
+
+/* HomePage Bottom Info */
+
+.TitleInfo_bm {
+	height: 175px;
+	margin-top: 80px;
+	background-image: url("../img/bg_green.jpg");
+	border-top: 2px white solid;
+	/*border-bottom: 6px #E71B75 solid;*/
+}
+
+.TitleText_bm {
+	text-align: center;
+	font-weight: "arvo";
+	font-size: 1.5em;
+	padding-top: 37px;
+	color: #999;
+}
+
+
+.img-circle {
+	background-color: #E71B75;
+}
+
+/* Thumbnail */
+
+.thumbnails {
+	float: right;
+	height: 105px;
 }
