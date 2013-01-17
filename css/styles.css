@@ -26,6 +26,10 @@ a:hover {
 	height: auto;
 }
 
+form {
+	margin: 0px;
+}
+
 .hero-unit {
 	background-image: url("../img/new_york_city.jpg"); 
 	background-size: 100%;
@@ -153,6 +157,19 @@ div.eventmain {
 	line-height: 1.4em;
 	padding: 15px;
 	cursor: pointer;
+	border-top: 1px solid #e0e0e0; 
+	border-right: 1px solid #e0e0e0; 
+	border-left: 1px solid #e0e0e0; 		
+	border-bottom: 8px solid #00ACDB; 	
+}
+.pagination {
+	width: 855px;
+	border-radius: 0px;
+	box-shadow:none;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	padding: 15px;
+	background-color: #f9f9f9;
 }
 
 div.boxdate {
@@ -189,7 +206,7 @@ div.eventbody a {
 .foodSearch {
 	background-color: #F9F9F9;
 	text-align: center;
-	padding-bottom: 1px;
+	padding-bottom: 20px;
 	padding-top: 20px;
 	border: 1px	#E0E0E0 solid; 
 }
@@ -197,7 +214,7 @@ div.eventbody a {
 .feelLuck {
 	background-color: #F9F9F9;
 	text-align: center;
-	padding-bottom: 1px;
+	padding-bottom: 20px;
 	padding-top: 20px;
 	border: 1px	black; 
 	margin-top: 25px;
@@ -207,7 +224,7 @@ div.eventbody a {
 .placeSearch {
 	background-color: #F9F9F9;
 	text-align: center;
-	padding-bottom: 1px;
+	padding-bottom: 20px;
 	padding-top: 20px;
 	border: 1px	#E0E0E0 solid;
 	margin-bottom: 20px; 
@@ -216,7 +233,7 @@ div.eventbody a {
 .nationalSearch{
 	background-color: #F9F9F9;
 	text-align: center;
-	padding-bottom: 1px;
+	padding-bottom: 20px;
 	padding-top: 20px;
 	border: 1px	#E0E0E0 solid; 
 }
@@ -289,26 +306,6 @@ input.SearchForm {
   padding: 6px 10px 6px 10px;
 }
 
-.solidbox {
-	background-color: #F9F9F9;
-	padding: 15px 20px 5px 20px;
-	font-size: 1.2em;
-	line-height: 1.4em;
-	margin-bottom: 15px;
-	border-bottom-style: solid;
-	border-color: #00ACDB;
-	border-width: 8px;
-	margin-right: 10px;
-}
-.actions {
-	margin-top: 12px;
-}
-
-.scrollspy-example {
-	height: 695px;
-	overflow: auto;
-	position: relative;
-}
 
 
 #spaceholder {
@@ -377,6 +374,8 @@ input.squareCorners {
 	background-color: #e5e5e5;
 	margin: auto;
 	border-bottom: 1px solid #ffffff;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
 
 .helper {
@@ -675,7 +674,110 @@ background-color: #00ACDB;
 
 /* Thumbnail */
 
-.thumbnails {
+.thumbnail {
+	height: 120px;
+	width: 120px;
+	overflow: hidden;
+	background-image: url("../img/chicken_food.jpg");
+	background-size: 150%;
 	float: right;
-	height: 105px;
+	margin-left: 30px;
+}
+
+.choose_file {
+	height: 30px;
+	width: 115px;
+	background-image: url("../img/image_add_text.png");
+	text-indent: -173px;
+	float:left;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	top: -1px;
+	left: 212px;
+}
+
+.actions {
+	position: relative;
+	top: -40px;
+	left: 12px;
+
+}
+
+
+.boxwrap {
+	
+}
+
+.solidbox {
+	background-color: #F9F9F9;
+	padding:15px;
+
+	font-size: 1.2em;
+	line-height: 1.4em;
+
+
+	border-bottom: 8px solid #00ACDB; 1px solid #ccc;
+	border-right: 1px solid #e0e0e0; 
+	border-left:1px solid #e0e0e0;
+	border-top:1px solid #e0e0e0;
+
+	margin-right: 10px;
+	min-height: 175px;
+	max-height: 250px;	
+}
+
+/* .solidbox {
+	background-color: #F9F9F9;
+	padding: 15px 20px 5px 20px;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin-bottom: 15px;
+	border-bottom-style: solid;
+	border-color: #00ACDB;
+	border-width: 8px;
+	margin-right: 10px;
+	min-height: 200px;
+} */
+
+.result_Box {
+	min-height: 700px;
+	max-height: 800px;
+	height: 100%;
+	overflow: scroll;
+	position: relative;
+	overflow-x:hidden;
+}
+
+.food_type {
+	font-size: 0.9em;
+	line-height: 1.2em;
+	margin-top: 5px;
+}
+
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+	border: 1px solid #e0e0e0;
+}
+
+#add_emailModal {
+	background-color: #f9f9f9;
+	width:600px;
+	margin-left: 280px;
+	height: 546px;
+	width: 250px;
+	box-shadow: none;
+
+}
+
+#add_button {
+	top: 10px;
+	padding: 7px;
+	background-image: url("../img/add.png");
+	background-repeat: no-repeat;
+	top: 205px;
+	position: absolute;
+	right: 41px;
+	background-position-x: 11px;
+	width: 97px;
+	text-align: right;
 }

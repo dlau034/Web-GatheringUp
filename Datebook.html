@@ -330,7 +330,7 @@
   </div>  
 
 <!--Create Event Modal-->
-    <div id="CreateEvent" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="CreateEvent" class="modal hide fade" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h2 id="myModalLabel">Create an Event</h2>
@@ -339,17 +339,18 @@
         <div class="modal-body">
             <div class="eventForm">
               <input class="span5 squareCorners" type="text" placeholder="Event Title">
-              <input class="span5 squareCorners" type="text" placeholder="Location (Optional)">
-              <input class="span4 squareCorners" type="text" placeholder="City (Optional)">
+              <input class="span2 squareCorners" type="text" placeholder="Location (Optional)">
+              <input class="span2 squareCorners" type="text" placeholder="City (Optional)">
               <input class="span1 squareCorners" type="text" placeholder="State">
-              <input class="span5 squareCorners" type="text" placeholder="Event Date">
+              <input class="span5 squareCorners" type="text" placeholder="Event Date">             
               <input class="span2 squareCorners" type="text" placeholder="Start Time (Optional)">
               <input class="span2 squareCorners" type="text" placeholder="End Time (Optional)" >
-              <input class="span5 squareCorners" type="text" placeholder="Invite your friends">
+      <div class="breakline"></div>                
+              <input class="span4 squareCorners" type="text" placeholder="Invite your friends">
+              <a id="add_button" style="cursor:pointer;" data-target="#add_emailModal" data-toggle="modal">Via Email</a>
               <textarea class="span5 squareCorners" rows="3" type="text" placeholder="Details"></textarea>
             </div>
         </div>
-      <div class="breakline"></div> 
       <div class="modal-footer">
           <button class="btn btn-blue btn-large span5">Create Event!</button>
       </div>
@@ -418,6 +419,15 @@
             </form>
         </div>
     </div>  
+
+
+<!--Add via Email Modal-->
+    <div id="add_emailModal" class="modal hide" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>        
+
+      </div>
+    </div>    
 
 <!-- Le javascript
 ================================================== -->
