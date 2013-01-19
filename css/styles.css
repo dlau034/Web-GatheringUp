@@ -67,7 +67,7 @@ form {
 }
 
 .nav {
-	padding-left: 15px;
+
 }
 
 .navbar .brand {
@@ -336,6 +336,7 @@ input.SearchForm {
 
 .modal-header {
 	border-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 .modal-footer {
@@ -359,9 +360,6 @@ input.SearchForm {
 .modal-body {
 	max-height: 430px;
 }
-
-
-
 
 input.squareCorners {
 	border-radius: 0px
@@ -442,10 +440,8 @@ div.grandcentral {
 
 .yourBookmarks {
 	overflow: auto;
-	min-height: 525px;
-	height: 80%;
-	position: absolute;
-	width: 270px;
+	min-height: 480px;
+	max-height: 500px;	
 }
 
 .eventbox > a {
@@ -457,7 +453,7 @@ div.grandcentral {
 }
 
 .EventListing {
-	max-height: 350px;
+	max-height: 450px;
 	overflow: auto;
 	margin-bottom:20px;
 }
@@ -748,7 +744,7 @@ background-color: #00ACDB;
 	max-height: 800px;
 	height: 100%;
 	overflow: scroll;
-	position: relative;
+	position: Prelative;
 	overflow-x:hidden;
 }
 
@@ -766,10 +762,9 @@ background-color: #00ACDB;
 	background-color: #f9f9f9;
 	width:600px;
 	margin-left: 280px;
-	height: 546px;
+	height: 505px;
 	width: 250px;
 	box-shadow: none;
-
 }
 
 #add_button {
@@ -783,4 +778,58 @@ background-color: #00ACDB;
 	background-position-x: 11px;
 	width: 97px;
 	text-align: right;
+}
+
+.alert {
+	padding-bottom: 0px;
+	margin-bottom: 10px;
+}
+
+.friends_module {
+	margin-top: 14px;
+	overflow-y:auto;
+	height: 280px;
+	padding-right: 1px;
+}
+
+#emailModal {
+	height: 505px;
+	width: 250px;
+	background-color: #f9f9f9;
+	position: absolute;
+	top: 0;
+	right: -250px;
+	border-left: 1px solid #ccc;
+	display: none;
+}
+
+#calendar {
+	width: auto;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	margin-top: 20px;
+}
+
+#nav-pill_box {
+	margin-top: 18px;
+	border-top: 1px solid #ccc;
+	padding-top: 12px;
+}
+
+#Your_event {
+	border-radius: 0px;
+	padding-left: 40px;
+	padding-right: 33px;
+}
+
+
+#Your_bookmark {
+	border-radius: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 4px;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+background-color: #00ABDC;
 }

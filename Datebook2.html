@@ -8,14 +8,8 @@
 	    <meta name="author" content="">
 
 <!-- Le styles -->
-	    <link href="css/bootstrap.css" rel="stylesheet">
-        <style type="text/css">
-          body {
-            padding-top: 60px;
-          }
+   
 
-        </style>        
-	    <link href="css/bootstrap-responsive.css" rel="stylesheet">
       <link rel="Stylesheet" type="text/css" href="css/search.css"/>
       <link rel="Stylesheet" type="text/css" href="css/home.css"/>
           <link rel='stylesheet' type='text/css' href='css/fullcalendar.css' />
@@ -23,7 +17,6 @@
           <script type='text/javascript' src='js/jquery-1.7.1.min.js'></script>
           <script type='text/javascript' src='js/jquery-ui-1.8.17.custom.min.js'></script>
           <script type='text/javascript' src='js/fullcalendar.min.js'></script>
-      <link rel="stylesheet" type="text/css" href="css/styles.css"/>          
 
 <!--Full Calendar-->    
 
@@ -95,27 +88,10 @@
 
           </script>
 
-
- 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<!-- Fav and touch icons -->
-      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-      <link rel="shortcut icon" href="ico/favicon.png">
-
-<!-- Google Fonts -->
-      <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
-
+    <div id='calendar'></div>
     <div class="wrapper"> <!-- Wrapper -->   
 
     <!-- Header + Navbar -->
@@ -175,17 +151,9 @@
         <button style="width:100%;" href="#CreateEvent" data-toggle="modal" role="button" class="btn btn-large btn-blue" type="submit" class="btn">Create Event!
         </button>
 
-
-
-
-<ul class="nav nav-pills" id="nav-pill_box">
-  <li class="tab-pane active">
-    <a id="Your_event" href="#home"  data-toggle="tab"><h4>Your Events</h4></a>
-  </li>
- <li>
-  <a id="Your_bookmark" href="#profile"  data-toggle="tab"><h4>Your Bookmarks</h4>
-  </a>
-  </li>
+<ul class="nav nav-pills">
+  <li class="tab-pane testing active"><a href="#home"  data-toggle="tab"><h4>Your Events</h4></a></li>
+ <li><a href="#profile"  data-toggle="tab"><h4>Your Bookmarks</h4></a></li>
 </ul>
 
 <div class="tab-content">
@@ -539,21 +507,8 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script> 
 
 <!--Side Add Friend Modal-->
-
     <script>
     $(document).ready(function(){
       $("#done_button").click(function(){
