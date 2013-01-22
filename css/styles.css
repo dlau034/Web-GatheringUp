@@ -12,6 +12,7 @@ h2 {
 	font-family: "Arvo", Helvetica, Arial, sans-serif;
 	color: #00ACDB;
 	font-weight: 400;
+	font-size: 2em;
 }
 
 h4 {
@@ -42,13 +43,11 @@ form {
 
 .btn.btn-large.btn-blue {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	padding: 15px 36px 15px 36px;
 }
-
-.btn.btn-large.btn-blue.btn-search {
-	width: 232px;
-	height: 50px;
+.btn-search {
+	width: 89%;
 	font-family: "ubuntu";
 }
 
@@ -66,7 +65,8 @@ form {
 	width: 160px;s
 }
 
-.nav {
+.navbar .nav{
+	left: 33px;
 
 }
 
@@ -150,7 +150,7 @@ form {
  	/* Search.css Overrides */
 
 div.eventmain {
-	width: 855px;
+	width: 100%;
 	border-radius: 0px;
 	box-shadow:none;
 	font-size: 1.2em;
@@ -240,10 +240,11 @@ div.eventbody a {
 
 
 input.SearchForm {
-	padding: 12px;
+	width: 80%;
+	padding: 10px;
 	border-radius: 0px;
 	font-family: "ubuntu";
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 .Mapbox {
@@ -375,7 +376,7 @@ input.squareCorners {
 	background-color: #e5e5e5;
 	margin: auto;
 	border-bottom: 1px solid #ffffff;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	margin-top: 10px;
 }
 
@@ -680,7 +681,7 @@ background-color: #00ACDB;
 	background-image: url("../img/chicken_food.jpg");
 	background-size: 150%;
 	float: right;
-	margin-left: 30px;
+	margin-left: 5px;
 }
 
 .choose_file {
@@ -704,9 +705,6 @@ background-color: #00ACDB;
 }
 
 
-.boxwrap {
-	
-}
 
 .solidbox {
 	background-color: #F9F9F9;
@@ -722,8 +720,8 @@ background-color: #00ACDB;
 	border-top:1px solid #e0e0e0;
 
 	margin-right: 10px;
-	min-height: 175px;
-	max-height: 250px;	
+	min-height: 200px;
+	max-height: 250px;
 }
 
 /* .solidbox {
@@ -772,7 +770,7 @@ background-color: #00ACDB;
 	padding: 7px;
 	background-image: url("../img/add.png");
 	background-repeat: no-repeat;
-	top: 205px;
+	top: 195px;
 	position: absolute;
 	right: 41px;
 	background-position-x: 11px;
@@ -793,7 +791,7 @@ background-color: #00ACDB;
 }
 
 #emailModal {
-	height: 505px;
+	height: 495px;
 	width: 250px;
 	background-color: #f9f9f9;
 	position: absolute;
