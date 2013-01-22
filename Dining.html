@@ -73,7 +73,7 @@
                         <input type="password" class="squareCorners" placeholder="Password">
                       </div>
                       <div class="SignInField">
-                        <a data-target="#myModal2" data-toggle="modal">Forgot Your Password?</a>
+                        <a style="cursor:pointer;" data-target="#forgotModal" data-toggle="modal">Forgot Your Password?</a>
                         <label class="checkbox">
                           <input type="checkbox">Remember me
                         </label>
@@ -132,6 +132,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -163,6 +164,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -194,6 +196,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -225,6 +228,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -256,6 +260,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -286,6 +291,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -316,6 +322,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -346,6 +353,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -376,6 +384,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -406,6 +415,7 @@
 
 
             <div class="actions">
+              <img class="add_image_btn" src="img/image_add_text.png" alt="">              
                   <form class="choose_file" action="#"  id="2241374Form" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                     <input type="file" name="userfile" size="10" id="2241374imagename" onchange="uploadimage(2241374)">
                   </form>               
@@ -463,7 +473,7 @@
               </div>
               <div class="control-group">
                 <label class="control-label" for="inputPassword">Create Password</label>
-                              <p class="helper">*At least one number & one capital letter</p> 
+                <p class="helper">*At least one number & one capital letter</p> 
                 <div class="controls">
                   <input type="password" class="squareCorners" placeholder="Min 8 Characters">
 
@@ -494,7 +504,24 @@
               </div>
             </form>
         </div>
-    </div>     
+    </div> 
+
+       
+
+<!--Forgot Password Modal-->
+    <div id="forgotModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>        
+        <h2 id="myModalLabel">Forgot Password</h2>
+      </div>
+      <div class="breakline"></div>
+      <div style="padding: 0px 35px 32px;" class="modal-body">
+        <h4>Enter you email address below to reset your password</h4>
+        <input style="padding-right:71px;"class="form-large" type="text" placeholder="Email Address">
+        <button style="padding:15px 33px 15px 33px;" type="submit" class="btn btn-blue btn-large">Reset Your Password!</button>
+      </div>
+    </div>        
+    
 
 <!-- Footer -->
   <div class="footer">

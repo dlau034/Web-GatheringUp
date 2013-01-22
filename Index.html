@@ -43,10 +43,10 @@
             <a class="brand" href="index.html">GatheringUP</a>
               <div class="nav-collapse collapse">
                 <ul class="nav">
-                  <li><a href="Dining.html">Dining</a></li>
+                  <li><a href="Dining.html">Dining</a></li>                  
                   <li><a href="Places.html">Places</a></li>
                   <li><a href="Events.html">Events</a></li>
-                  <li><a href="datebook.html">Datebook</a></li>
+                  <li><a href="#Signin_Modal" data-toggle="modal">Datebook</a></li>
                </ul>
               <form class="navbar-form pull-right">
                 <a href="#myModal" type="button" class="btn-menu" data-toggle="modal">Register</a>
@@ -132,24 +132,32 @@
     <div class="container">         
       <div class="row">
         <div class="span3 catogories">
+          <a href="dining.html">          
           <img src="img/dining_icon.png" class="img-circle catogeries">
           <h2>Dining</h2>
+          </a>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.  
           </p>
         </div>
         <div class="span3 catogories">
+          <a href="Places.html">
           <img src="img/places_icon.png" class="img-circle catogeries">
           <h2>Places</h2>
+          </a>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
        </div>
         <div class="span3 catogories">
+          <a href="Events.html">          
           <img src="img/event_icon.png" class="img-circle catogeries">
           <h2>Events</h2>
+        </a>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus </p>
         </div>
         <div class="span3 catogories">
+          <a href="datebook.html">             
           <img src="img/datebook_icon.png" class="img-circle catogeries">
           <h2>Datebook</h2>
+        </a>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo</p>
         </div>
       </div>
@@ -188,7 +196,7 @@
       <div class="TitleInfo_bm">
         <div class="container">
           <div class="TitleText_bm">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere </h2>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elite</h2>
             <small>- ipsum dolor sit amet</small>
           </div>
         </div> 
@@ -273,6 +281,40 @@
         </div>
     </div>   
 
+    <!--Sign Up Modal-->
+    <div id="Signin_Modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header registerModal">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h2 id="myModalLabel">Sign In!</h2>
+      </div>
+        <div class="breakline"></div>       
+        <div class="modal-body">
+          <p style="float:left;">Don't have an account? &nbsp</p>
+          <a href="#myModal" type="button" id="Register_modal" data-toggle="modal">Register Here!</a>     
+            <form class="form-horizontal">
+              <div class="SignInField_m">
+                 <button type="submit" class="btn btn-facebook" style="font-weight:bold;width:100%;">
+                    <img style="height:30px;width:auto;padding-right:5px;"src="img/facebook.png" alt="facebook">Sign In with Facebook
+                 </button>
+        <div style="margin-top:20px;" class="breakline"></div>                 
+              </div>
+                <div class="SignInField_m">
+                    <input style="width:256px;" type="text" class="squareCorners" placeholder="Email">
+                </div>
+                <div class="SignInField_m">
+                    <input style="width:256px;" type="password" class="squareCorners" placeholder="Password">
+                </div>
+                <div class="SignInField_m">
+                    <a style="cursor:pointer;" data-target="#forgotModal" data-toggle="modal">Forgot Your Password?</a>
+                    <label class="checkbox">
+                    <input type="checkbox">Remember me
+                    </label>
+                        <button type="submit" class="btn btn-blue btn-large" style="font-weight:bold;width:100%;margin-top:10px;">Sign In!</button>
+                      </div>
+                  </form> 
+               </div>
+            </div> 
+
 <!--Forgot Password Modal-->
     <div id="forgotModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
@@ -309,6 +351,16 @@
       $('.carousel').carousel({
         interval: 5000
       })
+    </script>
+
+
+    <script type="text/javascript">
+            $("#Register_modal").click(function(){
+        $("#Signin_Modal").hide();
+      });
+            $("#forgotmodal").click(function(){
+        $("#Signin_Modal").hide();
+      });
     </script>
   </body>
 </html>

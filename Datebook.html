@@ -154,10 +154,11 @@
                         <input type="password" class="squareCorners" placeholder="Password">
                       </div>
                       <div class="SignInField">
-                        <a data-target="#myModal2" data-toggle="modal">Forgot Your Password?</a>
+                        <a style="cursor:pointer;" data-target="#forgotModal" data-toggle="modal">Forgot Your Password?</a>
                         <label class="checkbox">
                           <input type="checkbox">Remember me
                         </label>
+                      <div class="breakline"></div>                        
                         <button type="submit" class="btn btn-blue pull-right" style="font-weight:bold;">Sign In!</button>
                       </div>
                   </form>             
@@ -175,18 +176,15 @@
         <button style="width:100%;" href="#CreateEvent" data-toggle="modal" role="button" class="btn btn-large btn-blue" type="submit" class="btn">Create Event!
         </button>
 
-
-
-
-<ul class="nav nav-pills" id="nav-pill_box">
-  <li class="tab-pane active">
-    <a id="Your_event" href="#home"  data-toggle="tab"><h4>Your Events</h4></a>
-  </li>
- <li>
-  <a id="Your_bookmark" href="#profile"  data-toggle="tab"><h4>Your Bookmarks</h4>
-  </a>
-  </li>
-</ul>
+          <ul class="nav nav-pills" id="nav-pill_box">
+            <li class="tab-pane pill_width active">
+              <a id="Your_event" href="#home"  data-toggle="tab"><h4 style="font-size: 1.17em;">Your Events</h4></a>
+            </li>
+           <li class="pill_width">
+            <a id="Your_bookmark" href="#profile"  data-toggle="tab"><h4 style="font-size: 1.17em;">Your Bookmarks</h4>
+            </a>
+            </li>
+          </ul>
 
 <div class="tab-content">
             <div class="tab-pane active" id="home">
@@ -530,6 +528,21 @@
             </form>
         </div>
     </div>  
+
+<!--Forgot Password Modal-->
+    <div id="forgotModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>        
+        <h2 id="myModalLabel">Forgot Password</h2>
+      </div>
+      <div class="breakline"></div>
+      <div style="padding: 0px 35px 32px;" class="modal-body">
+        <h4>Enter you email address below to reset your password</h4>
+        <input style="padding-right:71px;"class="form-large" type="text" placeholder="Email Address">
+        <button style="padding:15px 33px 15px 33px;" type="submit" class="btn btn-blue btn-large">Reset Your Password!</button>
+      </div>
+    </div>        
+
 
 
 <!--Add via Email Modal-->

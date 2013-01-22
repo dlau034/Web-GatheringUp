@@ -74,7 +74,7 @@
                         <input type="password" class="squareCorners" placeholder="Password">
                       </div>
                       <div class="SignInField">
-                        <a data-target="#myModal2" data-toggle="modal">Forgot Your Password?</a>
+                        <a style="cursor:pointer;" data-target="#forgotModal" data-toggle="modal">Forgot Your Password?</a>
                         <label class="checkbox">
                           <input type="checkbox">Remember me
                         </label>
@@ -115,15 +115,15 @@
                   </table>
               </div>
           <p>
-            <a class="btn btn-large btn-blue">Submit Your Events</a>
+            <a style="width:196px;" class="btn btn-large btn-blue">Submit Your Events</a>
           </p>
     </div>
 
  <!--Event Body content-->
-    <div class="eventBody span9">
+    <div class="eventBody span8 offset1">
       <div class="row">
         <div class="span6"><h2>Tuesday January 12 2013</h2> </div>
-        <div class="span3"><h2 class="searchFilter pull-right">Evening</h2> </div>
+        <div class="span2"><h2 class="searchFilter pull-right">Evening</h2> </div>
       </div>
 
         <div class="eventmain">
@@ -430,6 +430,20 @@
             </form>
         </div>
     </div>   
+
+<!--Forgot Password Modal-->
+    <div id="forgotModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>        
+        <h2 id="myModalLabel">Forgot Password</h2>
+      </div>
+      <div class="breakline"></div>
+      <div style="padding: 0px 35px 32px;" class="modal-body">
+        <h4>Enter you email address below to reset your password</h4>
+        <input style="padding-right:71px;"class="form-large" type="text" placeholder="Email Address">
+        <button style="padding:15px 33px 15px 33px;" type="submit" class="btn btn-blue btn-large">Reset Your Password!</button>
+      </div>
+    </div>        
 
 <!-- Footer -->
   <div class="footer">

@@ -190,7 +190,8 @@
     margin-left: 230px;
   }
   .offset1 {
-    margin-left: 130px;
+    /*margin-left: 130px;*/
+    margin-left: 80px;
   }
   .row-fluid {
     width: 100%;
@@ -1094,7 +1095,6 @@
   }
 }
 
-*/
 
 
 
