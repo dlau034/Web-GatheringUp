@@ -172,10 +172,11 @@
     <!-- Your Events + Buttons -->      
     <div class="container">
       <div class="row">
-        <div class="datebook span4">
-        <button style="width:100%;" href="#CreateEvent" data-toggle="modal" role="button" class="btn btn-large btn-blue" type="submit" class="btn">Create Event!
-        </button>
 
+        <div class="datebook span4">
+        <button style="width:70%;float:left;" href="#CreateEvent" data-toggle="modal" role="button" class="btn btn-large btn-blue" type="submit">Create Event!
+        </button>
+        <button id="calendarButton" class="btn btn-large btn-blue"></button>
           <ul class="nav nav-pills" id="nav-pill_box">
             <li class="tab-pane pill_width active">
               <a id="Your_event" href="#home"  data-toggle="tab"><h4 style="font-size: 1.17em;">Your Events</h4></a>
@@ -194,7 +195,7 @@
                       <tr>
                         <td>
                           <div class="eventbox">
-                            <a href="#190" onclick="loadurl('/data/activitydetails?activity=190')">Running at Central Park</a> 
+                            <a href="#190" onclick="loadurl('/data/activitydetails?activity=190')">Reading Books In New York City Library</a> 
                             <span id="id190"></span>
                               <br>Wednesday January 16, 2013<br>New York City          
                           </div>
@@ -372,6 +373,54 @@
 
     <!--Central Area content-->
       <div class="span8">
+        <div id="event_main">
+          <div class="event_info">
+            <h3>All Aboard with Thomas & Friends at the New York Botanical Garden</h3>
+            <dl class="dl-horizontal">
+              <dt>Location:</dt>
+              <dd>Watson Building, Room 302 (in Bronx Park)</dd>
+              <dt>Date:</dt>
+              <dd>Friday January 25, 2013</dd>
+              <dt>Time:</dt>
+              <dd>11:00 AM - 03.00 PM</dd>
+            </dl>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac eros justo. Suspendisse non leo at neque porta tincidunt. Maecenas molestie sapien vitae nisi egestas non dictum mauris porttitor. Aenean sodales eleifend tortor, quis tempus neque hendrerit ac. Pellentesque lectus dui, dignissim nec bibendum cursus, auctor vel nibh. Aliquam erat volutpat. Suspendisse sed libero sed diam mattis accumsan. In vitae enim aliquet metus commodo hendrerit sed in nulla.</p>        
+          </div>
+          <div class="blue_bar"></div>
+                <form accept-charset="UTF-8" action="" method="POST">
+                    <textarea class="span8" id="new_message" name="new_message"
+                    placeholder="Type in your message" rows="5"></textarea>                    
+                    <button class="btn btn-blue" type="submit">Post New Message</button>
+                    <div style="margin-top: 12px;" class="breakline_msg"></div>                     
+                </form>            
+          <div class="message_area">
+                <div class="message_entry">
+                    <img class="img-polaroid thumbnail_profile" src="img/man.jpg" alt="thumbnail"> 
+                    <div class="text_entry">
+                    <h4>James Taylor</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac eros justo. Suspendisse non leo at neque porta tincidunt. Maecenas molestie sapien vitae nisi egestas non dictum mauris porttitor. Eros justo. Suspendisse non leo at neque porta tincidunt. Maecenas molestie sapien vitae nisi egestas non dictum mauris porttitor. </p>
+                    </div> 
+                    <div class="breakline_msg"></div>  
+                </div>
+                <div class="message_entry">
+                    <img class="img-polaroid thumbnail_profile" src="img/girl.jpg" alt="thumbnail"> 
+                    <div class="text_entry">
+                    <h4>Judy Thomas</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac eros justo. Suspendisse non leo at neque porta tincidunt. Maecenas molestie sapien vitae nisi egestas non dictum mauris porttitor.</p>
+                    </div> 
+                    <div class="breakline_msg"></div>  
+                </div>                
+                <div class="message_entry">
+                    <img class="img-polaroid thumbnail_profile" src="img/man.jpg" alt="thumbnail"> 
+                    <div class="text_entry">
+                    <h4>James Taylor</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac eros justo. Suspendisse non leo at neque porta tincidunt. Maecenas molestie sapien vitae nisi egestas non dictum mauris porttitor. Eros justo. Suspendisse non leo at neque porta tincidunt. Maecenas molestie sapien vitae nisi egestas non dictum mauris porttitor. </p>
+                    </div> 
+                    <div class="breakline_msg"></div>  
+                </div>                
+       
+          </div>  
+        </div>  
         <div id='calendar'></div>
         </div>
       </div>
@@ -583,15 +632,33 @@
 
 <!--Tabs:Bookmark + Events-->
     <script>
+    $(document).ready(function(){    
       $(function () {
         $('#myTab a:last').tab('show');
-      })
+      });
+    });      
     </script>
 
+    <!--Toggles Main Event-->
 
+    <script>
+    $(document).ready(function(){
+      $(".eventbox a").click(function(){
+        $("#calendar").hide();
+      });
 
+      $(".eventbox a").click(function(){
+        $("#event_main").show();
+      });
 
+      $("#calendarButton").click(function(){
+        $("#event_main").hide();
+      });
 
-
+      $("#calendarButton").click(function(){
+        $("#calendar").show();
+      });
+    });      
+    </script>
   </body>
 </html>
